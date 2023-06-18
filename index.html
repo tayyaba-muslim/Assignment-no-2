@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create a user registration form & validate the form by
+        using regular expression JS...</title>
+        <!-- bootstrap cdn -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+</head>
+<body>
+  
+</body>
+</html>
+<head>
+  
+  <style>
+    *{
+      color: white;
+    }
+    body{
+      background-image: linear-gradient(rgba(236, 231, 231, 0.2),rgba(129, 126, 126, 0.2)), url(image/ba.jpeg);
+      background-size: cover;
+      background-repeat: no-repeat;
+    
+    }
+    .error {
+      color: red;
+    }
+    .nam{
+      margin-left: 15px;
+    }
+    .form-control{
+      padding-left: 10px;
+    }
+    
+  </style>
+</head>
+<body>
+  <h1 class="text-center bg-dark text-white"><i>Form Validation By Using Regex In JS.</i></h1>
+    <form id="registrationForm" onsubmit="return validateForm()">
+      <div class="form-group">
+    <label for="username" class="nam"><h4><b> Username: </b> </h4></label>
+    <input type="text" id="username" class="form-control" name="username" required placeholder="Enter Your Name...">
+    <span id="usernameError" class="error"></span><br>
+  </div>
+  <div class="form-group">
+    <label for="password" class="nam"><h4><b>Password:</b> </h4></label>
+    <input type="password" id="password" class="form-control" name="password" required placeholder="Enter Your Password...">
+    <span id="passwordError" class="error"></span><br>
+  </div>
+  <div class="form-group">
+    <label for="confirmPassword" class="nam"><h4><b>Confirm Password: </b> </h4></label>
+    <input type="password" id="confirmPassword" class="form-control" name="confirmPassword" required
+     placeholder="Enter Your Confirm Password...">
+    <span id="confirmPasswordError" class="error"></span><br>
+  </div>
+  <div class="form-group">
+    <label for="email" class="nam"><h4><b>Email: </b> </h4></label>
+    <input type="email" id="email"  class="form-control" name="email" required placeholder="Enter Your Email...">
+    <span id="emailError" class="error"></span><br>
+    </div>
+    <input type="submit" value="submit"  class="btn btn-danger nam">
+  </form>
+
+  <script src="valid.js"></script>
+</body>
+</html>
